@@ -1,0 +1,2130 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/aopo-full.owl#"
+     xml:base="http://purl.obolibrary.org/obo/aopo-full.owl"
+     xmlns:CL="http://purl.obolibrary.org/obo/CL_"
+     xmlns:GO="http://purl.obolibrary.org/obo/GO_"
+     xmlns:RO="http://purl.obolibrary.org/obo/RO_"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:BFO="http://purl.obolibrary.org/obo/BFO_"
+     xmlns:IAO="http://purl.obolibrary.org/obo/IAO_"
+     xmlns:OBI="http://purl.obolibrary.org/obo/OBI_"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:AOPO="http://purl.obolibrary.org/obo/AOPO_"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CHEBI="http://purl.obolibrary.org/obo/CHEBI_"
+     xmlns:AOPO_v="http://purl.obolibrary.org/obo/aopo/value/"
+     xmlns:UBERON="http://purl.obolibrary.org/obo/UBERON_"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon_">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/aopo-full.owl">
+        <dc:title>AOPO AOP-Wiki module</dc:title>
+        <rdfs:comment>Pluggable AOP-Wiki extension of AOP-Core.</rdfs:comment>
+        <owl:versionInfo>pre-release (built 2026-09-10)</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000026 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0000026">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <obo:IAO_0000115>A relation between a key event relationship and the key event at its downstream end.</obo:IAO_0000115>
+        <rdfs:label>has_downstream_key_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000048 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0000048">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <obo:IAO_0000115>A relation between a key event relationship and the key event at its upstream end.</obo:IAO_0000115>
+        <rdfs:comment>Referent processes: upstream KE causally upstream of (RO:0002411) downstream KE.</rdfs:comment>
+        <rdfs:label>has_upstream_key_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100007 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100007">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100031"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000061"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and the key event that is its adverse outcome.</obo:IAO_0000115>
+        <rdfs:label>has_adverse_outcome</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100021 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100021">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000224"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <obo:IAO_0000115>A relation between a stressor and a chemical that the stressor record is about.</obo:IAO_0000115>
+        <rdfs:comment>Specialised to IAO denotes: the stressor record denotes a particular chemical.</rdfs:comment>
+        <rdfs:label>has_chemical_entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100027 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100027">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000089"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000232"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+        <obo:IAO_0000115>A relation between an assessed item (a key event relationship assessment, a stressor association or an applicability statement) and its evidence level.</obo:IAO_0000115>
+        <rdfs:label>has_evidence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100031">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and a key event that is part of it.</obo:IAO_0000115>
+        <rdfs:label>has_key_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100032 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100032">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and a key event relationship that is part of it.</obo:IAO_0000115>
+        <rdfs:label>has_key_event_relationship</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100036 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100036">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100031"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000119"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and the key event that is its molecular initiating event.</obo:IAO_0000115>
+        <rdfs:label>has_molecular_initiating_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100056">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000142"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000224"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and a stressor documented to initiate it.</obo:IAO_0000115>
+        <rdfs:comment>Specialised to IAO mentions: the AOP references but is not primarily about the stressor record.</rdfs:comment>
+        <rdfs:label>has_stressor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100057">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000233"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and its overall assessment.</obo:IAO_0000115>
+        <rdfs:label>has_overall_assessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100058 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100058">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and its OECD status.</obo:IAO_0000115>
+        <rdfs:label>has_oecd_status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100059">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000240"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and the licence under which the AOP-Wiki publishes it.</obo:IAO_0000115>
+        <rdfs:label>has_wiki_license</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100060 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100060">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000234"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and an external link recorded for it.</obo:IAO_0000115>
+        <rdfs:label>has_external_link</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100061 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100061">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000106"/>
+        <obo:IAO_0000115>A relation between a key event and a biological event that the key event describes.</obo:IAO_0000115>
+        <rdfs:comment>KE (process) to its component descriptor (ICE); inverse of an is-about, so not a has_part.</rdfs:comment>
+        <rdfs:label>has_biological_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100062">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000106"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000226"/>
+        <obo:IAO_0000115>A relation between a biological event and the biological process that changes in it.</obo:IAO_0000115>
+        <rdfs:label>has_process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100063 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100063">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000106"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000227"/>
+        <obo:IAO_0000115>A relation between a biological event and the biological object that changes in it.</obo:IAO_0000115>
+        <rdfs:comment>Descriptor-level reference (the component is about the object term). The reality-layer relation is has_object_participant (RO:0000057) on the key-event process.</rdfs:comment>
+        <rdfs:label>has_object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100064 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100064">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000106"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000229"/>
+        <obo:IAO_0000115>A relation between a biological event and the biological action that specifies the direction or kind of change it represents.</obo:IAO_0000115>
+        <rdfs:comment>Records the direction/kind of change; not aboutness. Reality-layer counterpart: RO:0002304 / RO:0002305 (causally upstream of, positive/negative effect) on the KER, or a PATO quality of the key-event process.</rdfs:comment>
+        <rdfs:label>has_action</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100065 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100065">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <obo:IAO_0000115>A relation between a key event and the biological organisation level at which it is measured.</obo:IAO_0000115>
+        <rdfs:comment>KE (process) to the organisation level at which it is measured; metadata, left unrefined.</rdfs:comment>
+        <rdfs:label>has_biological_organization_level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100066">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000243"/>
+        <obo:IAO_0000115>A relation between a key event and the cell type in which the described change occurs.</obo:IAO_0000115>
+        <rdfs:label>has_cell_term</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100067 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100067">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000244"/>
+        <obo:IAO_0000115>A relation between a key event and the organ or tissue in which the described change occurs.</obo:IAO_0000115>
+        <rdfs:label>has_organ_term</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100068 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100068">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway, key event or key event relationship and an applicability statement about it.</obo:IAO_0000115>
+        <rdfs:comment>Subject is described by the applicability statement (inverse of is-about); mixed ICE/process domain, left unrefined.</rdfs:comment>
+        <rdfs:label>has_applicability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100069 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100069">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway and an assessment of one of its key event relationships.</obo:IAO_0000115>
+        <rdfs:label>has_key_event_relationship_assessment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100070 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100070">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000237"/>
+        <obo:IAO_0000115>A relation between a key event relationship assessment and the adjacency value it records.</obo:IAO_0000115>
+        <rdfs:label>has_adjacency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100071 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100071">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+        <obo:IAO_0000115>A relation between a key event relationship assessment and the quantitative understanding level it records.</obo:IAO_0000115>
+        <rdfs:label>has_quantitative_understanding_level</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100072 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100072">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000089"/>
+        <obo:IAO_0000115>A relation between a key event relationship and its weight-of-evidence assessment.</obo:IAO_0000115>
+        <rdfs:label>has_weight_of_evidence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100073 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100073">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000129"/>
+        <obo:IAO_0000115>A relation between a key event relationship and its quantitative-understanding assessment.</obo:IAO_0000115>
+        <rdfs:label>has_quantitative_understanding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100074 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100074">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000062"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000232"/>
+        <obo:IAO_0000115>A relation between an adverse outcome pathway or key event and a stressor association that records one of its stressors with evidence.</obo:IAO_0000115>
+        <rdfs:comment>Subject is recorded by the stressor association; mixed ICE/process domain, left unrefined.</rdfs:comment>
+        <rdfs:label>has_stressor_association</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100075 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100075">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000230"/>
+        <rdfs:comment>NEW ID. Reality layer: in taxon (RO:0002162).</rdfs:comment>
+        <rdfs:label>applies_to_taxon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100076 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100076">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:comment>NEW ID.</rdfs:comment>
+        <rdfs:label>applies_to_sex</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100077 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100077">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000242"/>
+        <rdfs:comment>NEW ID.</rdfs:comment>
+        <rdfs:label>applies_to_life_stage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100078 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100078">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+        <rdfs:comment>NEW ID.</rdfs:comment>
+        <rdfs:label>assesses_key_event_relationship</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100079 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100079">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000232"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000224"/>
+        <rdfs:comment>NEW ID.</rdfs:comment>
+        <rdfs:label>associates_stressor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0100080 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0100080">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000227"/>
+        <obo:IAO_0000115>A relation between a key event and the biological object that participates in the change it represents.</obo:IAO_0000115>
+        <rdfs:comment>Reality-layer complement to has_object: the key-event process has the biological object as a participant.</rdfs:comment>
+        <rdfs:label>has_object_participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <rdfs:label>realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:label>realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <rdfs:label>occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:label>mentions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
+        <rdfs:label>denotes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:label>characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label>has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <rdfs:label>located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002162 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002162">
+        <rdfs:label>in taxon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002304 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002304">
+        <rdfs:label>causally upstream of, positive effect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002305 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002305">
+        <rdfs:label>causally upstream of, negative effect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002411 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002411">
+        <rdfs:label>causally upstream of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200001 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200001">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>An alternative name of a chemical, stressor or ontology term record.</obo:IAO_0000115>
+        <rdfs:label>has_synonym</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200002 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200002">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The external ontology or database from which a term record (biological process, object, action, taxon, cell term, organ term) was taken.</obo:IAO_0000115>
+        <rdfs:label>has_source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200003 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200003">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The identifier of a term record in its external source ontology or database.</obo:IAO_0000115>
+        <rdfs:label>has_source_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200004 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200004">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The full name of an adverse outcome pathway, key event or key event relationship as displayed in the knowledge base.</obo:IAO_0000115>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200005 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200005">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The abbreviated name of an adverse outcome pathway or key event.</obo:IAO_0000115>
+        <rdfs:label>short_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200006 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200006">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of an adverse outcome pathway, key event, key event relationship or stressor.</obo:IAO_0000115>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200007 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200007">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text abstract of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>abstract</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200008 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200008">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text list of literature references supporting an adverse outcome pathway, key event or key event relationship.</obo:IAO_0000115>
+        <rdfs:label>references</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200009 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200009">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <obo:IAO_0000115>The date and time at which a record was created in the knowledge base.</obo:IAO_0000115>
+        <rdfs:label>creation_timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200010 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200010">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <obo:IAO_0000115>The date and time at which a record was last modified in the knowledge base.</obo:IAO_0000115>
+        <rdfs:label>last_modification_timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200011 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200011">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The Chemical Abstracts Service registry number of a chemical.</obo:IAO_0000115>
+        <rdfs:label>casrn</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200012 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200012">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The hashed International Chemical Identifier of a chemical.</obo:IAO_0000115>
+        <rdfs:label>inchikey</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200013 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200013">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The identifier of a chemical in the US EPA DSSTox database.</obo:IAO_0000115>
+        <rdfs:label>dsstox_id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200014 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200014">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The preferred name of a chemical.</obo:IAO_0000115>
+        <rdfs:label>preferred_name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200015 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200015">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The name under which an AOP developer entered a chemical for a stressor.</obo:IAO_0000115>
+        <rdfs:label>user_term</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200016 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200016">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of how exposure to a stressor occurs.</obo:IAO_0000115>
+        <rdfs:label>exposure_characterization</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200017 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200017">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of how a key event is measured.</obo:IAO_0000115>
+        <rdfs:label>measurement_methodology</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200018 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200018">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the evidence for the taxonomic domain of applicability of a key event or key event relationship.</obo:IAO_0000115>
+        <rdfs:label>evidence_supporting_taxonomic_applicability</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200019 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200019">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of assays or test guidelines associated with a key event.</obo:IAO_0000115>
+        <rdfs:label>associated_tests</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200020 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200020">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the evidence that chemicals initiate a molecular initiating event.</obo:IAO_0000115>
+        <rdfs:label>evidence_supporting_chemical_initiation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200021 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200021">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text examples given for an adverse outcome.</obo:IAO_0000115>
+        <rdfs:label>examples</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200022 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200022">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the regulatory relevance of an adverse outcome.</obo:IAO_0000115>
+        <rdfs:label>regulatory_relevance</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200023 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200023">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of how evidence for a key event relationship was collected.</obo:IAO_0000115>
+        <rdfs:label>evidence_collection_strategy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200024 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200024">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of factors that modulate a key event relationship or an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>known_modulating_factors</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200025 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200025">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text overall weight-of-evidence statement for a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>weight_of_evidence_value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200026 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200026">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the biological plausibility of a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>biological_plausibility</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200027 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200027">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the empirical support for the linkage of a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>empirical_support</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200028 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200028">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of uncertainties and inconsistencies in the evidence for a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>uncertainties_or_inconsistencies</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200029 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200029">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the quantitative relationship between the responses of the upstream and downstream key events of a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>response_response_relationship</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200030 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200030">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the time between the upstream and downstream key events of a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>time_scale</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200031 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200031">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of feedforward or feedback loops affecting a key event relationship.</obo:IAO_0000115>
+        <rdfs:label>feedforward_feedback_loops</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200032 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200032">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text summary of the essentiality of the key events of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>key_event_essentiality_summary</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200033 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200033">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text summary of the overall weight of evidence of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>weight_of_evidence_summary</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200034 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200034">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of quantitative considerations in the overall assessment of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>quantitative_considerations</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200035 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200035">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the domain of applicability of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>applicability_description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200036 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200036">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text background section of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>background</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200037 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200037">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the strategy followed in developing an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>development_strategy</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200038 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200038">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The free-text description of the potential regulatory or research applications of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>potential_applications</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200039 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200039">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The person responsible for an adverse outcome pathway entry.</obo:IAO_0000115>
+        <rdfs:label>point_of_contact</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200040 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200040">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The authors of an adverse outcome pathway entry.</obo:IAO_0000115>
+        <rdfs:label>authors</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200041 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200041">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>A person who coached the development of an adverse outcome pathway entry.</obo:IAO_0000115>
+        <rdfs:label>coach</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200042 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200042">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The OECD AOP development programme project number of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>oecd_project</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200043 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200043">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The version of the AOP developers&apos; handbook that an adverse outcome pathway entry follows.</obo:IAO_0000115>
+        <rdfs:label>handbook_version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200044 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200044">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The web address of an external link.</obo:IAO_0000115>
+        <rdfs:label>url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0200045 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/AOPO_0200045">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115>The name of the website or resource that an external link points to.</obo:IAO_0000115>
+        <rdfs:label>link_source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000061">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000247"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000247"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A key event of regulatory significance, at the individual or population level, that constitutes the terminal adverse endpoint of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>adverse_outcome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000233"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100059"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000240"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000234"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100069"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000245"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100074"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000232"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that represents the causal sequence of key events linking a molecular initiating event to an adverse outcome, together with the evidence assessment of the linkage, as curated in an AOP knowledge base such as the AOP-Wiki.</obo:IAO_0000115>
+        <rdfs:label>adverse_outcome_pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that holds the weight-of-evidence assessment of a key event relationship: its overall rating and the descriptions of biological plausibility, empirical support and uncertainties or inconsistencies.</obo:IAO_0000115>
+        <rdfs:label>weight_of_evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100061"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100065"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000243"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100067"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000244"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100068"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100080"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000227"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A biological process representing a measurable change in biological state that is essential to the progression of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>key_event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100062"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000226"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100063"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000227"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100064"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that describes a key event as a (biological process, object, action) triple whose parts are terms drawn from domain ontologies (GO, CL, UBERON, ChEBI, PR). In the AOP-Wiki schema this is the biological-event.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>biological event</oboInOwl:hasExactSynonym>
+        <rdfs:label>key_event_component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000048"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100068"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000231"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100072"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000089"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100073"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000129"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity asserting a scientifically supported, directional causal linkage between an upstream key event and a downstream key event, together with the weight of evidence for that linkage.</obo:IAO_0000115>
+        <rdfs:label>key_event_relationship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000119">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000246"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000246"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The causally upstream-most key event: a molecular-level interaction in which a stressor perturbs a biological target and that starts an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>molecular_initiating_event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that holds the quantitative-understanding assessment of a key event relationship: its description, supporting evidence, response-response relationship, time scale and feedforward or feedback loops.</obo:IAO_0000115>
+        <rdfs:label>quantitative_understanding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100021"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that describes an agent, typically a chemical or a defined mixture, documented to initiate one or more adverse outcome pathways through a molecular initiating event.</obo:IAO_0000115>
+        <rdfs:label>stressor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000226">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process.</obo:IAO_0000115>
+        <rdfs:comment>AOPO&apos;s local alias for the Gene Ontology biological process root: it denotes exactly the same processes. It exists so that the key-event-component process slot has an AOPO-namespace range rather than hard-coding GO. Any GO biological process is a biological_process and vice versa.</rdfs:comment>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity (protein, chemical entity, cell, anatomical structure, cellular component or population) that a key event component references as the entity that changes in the key event.</obo:IAO_0000115>
+        <rdfs:label>biological_object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the direction or kind of change (for example increased, decreased, occurrence, disrupted, functional change) that a biological event represents in its object or process.</obo:IAO_0000115>
+        <rdfs:label>biological_action</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000230">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An organism.</obo:IAO_0000115>
+        <rdfs:comment>AOPO&apos;s local alias for the NCBITaxon organism root: it denotes exactly the same organisms. Used as the range of applies_to_taxon. It is not restricted to taxa that an AOP has been declared applicable to — that restriction lives on the applicability statement, not on this class.</rdfs:comment>
+        <rdfs:label>taxonomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100075"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000230"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100076"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100077"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000242"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that records that an adverse outcome pathway, key event or key event relationship applies to a taxon, a sex or a life stage, together with the evidence level for that applicability.</obo:IAO_0000115>
+        <rdfs:label>applicability_statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100079"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that records that a stressor is documented to initiate an adverse outcome pathway or to trigger a key event, together with the evidence level for that association.</obo:IAO_0000115>
+        <rdfs:label>stressor_association</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that holds the overall assessment of an adverse outcome pathway: its description, domain of applicability, key event essentiality summary, weight-of-evidence summary, known modulating factors and quantitative considerations.</obo:IAO_0000115>
+        <rdfs:label>overall_assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that records a web resource outside the AOP knowledge base that an adverse outcome pathway entry links to, with its URL, title and source.</obo:IAO_0000115>
+        <rdfs:label>external_link</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000235">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the strength of the weight of evidence assigned by AOP developers to a key event relationship, a stressor association or an applicability statement (high, moderate, low, not specified).</obo:IAO_0000115>
+        <rdfs:label>evidence_level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the degree to which the quantitative relationship between an upstream and a downstream key event is understood (high, moderate, low, not specified).</obo:IAO_0000115>
+        <rdfs:label>quantitative_understanding_level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000237 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000237">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies whether a key event relationship links two key events that are directly adjacent in an adverse outcome pathway or are separated by intermediate key events.</obo:IAO_0000115>
+        <rdfs:label>adjacency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000238 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000238">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the level of biological organisation at which a key event is measured (molecular, cellular, tissue, organ, individual, population).</obo:IAO_0000115>
+        <rdfs:label>biological_organization_level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000239 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000239">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the stage of an adverse outcome pathway in the OECD AOP development programme review process (under development, under review, WPHA/WNT endorsed).</obo:IAO_0000115>
+        <rdfs:label>oecd_status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000240 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000240">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the licence under which the AOP-Wiki publishes an adverse outcome pathway (all rights reserved, BY-SA, open for adoption).</obo:IAO_0000115>
+        <rdfs:label>wiki_license</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the sex or sexes to which an adverse outcome pathway, key event or key event relationship applies.</obo:IAO_0000115>
+        <rdfs:label>sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000242 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <obo:IAO_0000115>A categorical value specification that specifies the life stage or developmental period to which an adverse outcome pathway, key event or key event relationship applies.</obo:IAO_0000115>
+        <rdfs:label>life_stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000243">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A cell.</obo:IAO_0000115>
+        <rdfs:comment>AOPO&apos;s local alias for the Cell Ontology cell root: it denotes exactly the same cells. Used as the range of the key-event cell slot. It is not restricted to cells in which a key event occurs — that restriction lives on the key event, not on this class.</rdfs:comment>
+        <rdfs:label>cell_term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000244 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000244">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An anatomical entity.</obo:IAO_0000115>
+        <rdfs:comment>AOPO&apos;s local alias for the UBERON anatomical entity root: it denotes exactly the same entities. Used as the range of the key-event organ slot. It is not restricted to organs or tissues in which a key event occurs — that restriction lives on the key event, not on this class.</rdfs:comment>
+        <rdfs:label>organ_term</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000237"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100071"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/AOPO_0100078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An information content entity that records, for one key event relationship as used in one adverse outcome pathway, its adjacency, its evidence level and its quantitative understanding level.</obo:IAO_0000115>
+        <rdfs:label>key_event_relationship_assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000246 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000246">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000119"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A role borne by a material entity (e.g. a chemical) in virtue of which it perturbs a biological target, realized in a molecular initiating event.</obo:IAO_0000115>
+        <rdfs:label>stressor_role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AOPO_0000247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AOPO_0000247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A role assigned to a key event in virtue of its regulatory significance as the terminal, adverse endpoint of an adverse outcome pathway.</obo:IAO_0000115>
+        <rdfs:label>adverse_outcome_role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>chemical entity (ChEBI root)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>cell (CL root)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:label>biological process (GO root)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:label>information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>organism (NCBITaxon root)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
+        <rdfs:label>categorical value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label>value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label>anatomical entity (UBERON root)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/adjacent -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/adjacent">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000237"/>
+        <rdfs:label>adjacent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/all_rights_reserved -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/all_rights_reserved">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000240"/>
+        <rdfs:label>All rights reserved</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/asexual -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/asexual">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Asexual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/biosphere -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/biosphere">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Biosphere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/by_sa -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/by_sa">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000240"/>
+        <rdfs:label>BY-SA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/cellular -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/cellular">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Cellular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/communities -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/communities">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Communities</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/ecosystem -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/ecosystem">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Ecosystem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/esca_approved -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/esca_approved">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+        <rdfs:label>ESCA Approved</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/female -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/female">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Female</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/hermaphrodite -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/hermaphrodite">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Hermaphrodite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/high">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+        <rdfs:label>high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/individual -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/individual">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/low -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/low">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+        <rdfs:label>low</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/male -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/male">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Male</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/mixed -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/mixed">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Mixed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/moderate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/moderate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+        <rdfs:label>moderate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/molecular -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/molecular">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Molecular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/nonadjacent -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/nonadjacent">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000237"/>
+        <rdfs:label>non-adjacent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/not_specified -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/not_specified">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000235"/>
+        <rdfs:label>not specified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/open_for_adoption -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/open_for_adoption">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000240"/>
+        <rdfs:label>Open for adoption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/organ -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/organ">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Organ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/organ_system -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/organ_system">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Organ System</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/organelle -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/organelle">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Organelle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/population -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/population">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Population</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/qu_high -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/qu_high">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+        <rdfs:label>high</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/qu_low -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/qu_low">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+        <rdfs:label>low</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/qu_moderate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/qu_moderate">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+        <rdfs:label>moderate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/qu_not_specified -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/qu_not_specified">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000236"/>
+        <rdfs:label>not specified</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/species -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/species">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Species</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/third_gender -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/third_gender">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Third Gender</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/tissue -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/tissue">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000238"/>
+        <rdfs:label>Tissue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/under_development -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/under_development">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+        <rdfs:label>Under Development</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/under_review -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/under_review">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+        <rdfs:label>Under Review</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/unspecific -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/unspecific">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000241"/>
+        <rdfs:label>Unspecific</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/aopo/value/wpha_wnt_endorsed -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/aopo/value/wpha_wnt_endorsed">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AOPO_0000239"/>
+        <rdfs:label>WPHA/WNT Endorsed</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+
