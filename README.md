@@ -23,6 +23,9 @@ If your checkout path contains spaces, use Docker directly (see [migration-data/
 | `src/metadata/aopo.yml` | OBO PURL configuration template |
 
 
-
+**##Contributors**
+IISPV: Shubh Sharma, Saurav Kumar, Deepika Deepika, Vikas Kumar
+MU: Marvin Martens
+JSI: Pance Panov
 ## License
 
